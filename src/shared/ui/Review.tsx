@@ -19,6 +19,7 @@ export default function Review({ testimonial }: { testimonial: Testimonial }) {
 					<p className={styles.status}>Verified Buyer</p>
 				</div>
 			</div>
+			<p className={styles.content}>{content}</p>
 		</div>
 	);
 }

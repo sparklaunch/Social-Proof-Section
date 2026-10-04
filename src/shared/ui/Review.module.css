@@ -2,6 +2,9 @@
 	background-color: var(--color-text);
 	padding: 30px;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .avatar {
@@ -28,4 +31,17 @@
 .status {
 	color: var(--color-card);
 	font-weight: 300;
+}
+
+.content {
+	color: var(--color-card);
+	line-height: 1.5;
+}
+
+.content::before {
+	content: '"';
+}
+
+.content::after {
+	content: '"';
 }
