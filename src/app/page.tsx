@@ -22,6 +22,7 @@ export default function Home() {
 					))}
 				</section>
 			</div>
+			<div className={styles.bottom}></div>
 		</main>
 	);
 }
