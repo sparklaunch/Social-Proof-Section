@@ -4,9 +4,15 @@ import star from "../assets/images/star.svg";
 import styles from "./Rating.module.css";
 
 export default function Rating({ rate }: { rate: Rate }) {
-	const { numberOfStars, reviewer } = rate;
+	const { numberOfStars, reviewer, id } = rate;
 	return (
-		<div className={styles.card}>
+		<div
+			className={styles.card}
+			style={{
+				top: +id * 10,
+				left: +id * 50
+			}}
+		>
 			<div className={styles.stars}>
 				{[...Array(numberOfStars)].map((_, index) => (
 					<Image src={star} alt="" key={index} />
