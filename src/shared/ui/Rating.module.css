@@ -1,4 +1,19 @@
 .card {
 	background-color: var(--color-card);
-	padding: 10px 15px;
+	padding: 20px 30px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	border-radius: 10px;
+}
+
+.stars {
+	display: flex;
+	gap: 8px;
+}
+
+.reviewer {
+	color: var(--color-text);
+	font-weight: 700;
+	font-size: 20px;
 }

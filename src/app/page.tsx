@@ -1,3 +1,5 @@
+import { ratings } from "../../db.json";
+import Rating from "../shared/ui/Rating";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -14,7 +16,11 @@ export default function Home() {
 						saying about our services.
 					</p>
 				</header>
-				<section className={styles.ratings}></section>
+				<section className={styles.ratings}>
+					{ratings.map((rating) => (
+						<Rating key={rating.id} rate={rating} />
+					))}
+				</section>
 			</div>
 		</main>
 	);
