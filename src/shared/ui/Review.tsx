@@ -3,9 +3,14 @@ import Image from "next/image";
 import styles from "./Review.module.css";
 
 export default function Review({ testimonial }: { testimonial: Testimonial }) {
-	const { name, avatar, content } = testimonial;
+	const { id, name, avatar, content } = testimonial;
 	return (
-		<div className={styles.card}>
+		<div
+			className={styles.card}
+			style={{
+				top: +id * 30
+			}}
+		>
 			<div className={styles.title}>
 				<Image
 					src={`/assets/images/${avatar}`}
