@@ -14,7 +14,7 @@ export default function Home() {
 						saying about our services.
 					</p>
 				</header>
-				<section></section>
+				<section className={styles.ratings}></section>
 			</div>
 		</main>
 	);
