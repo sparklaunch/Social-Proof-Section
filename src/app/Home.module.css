@@ -24,6 +24,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
+	position: absolute;
 }
 
 .top {
@@ -80,11 +81,38 @@
 }
 
 @media (max-width: 1000px) {
+	.wrapper {
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
 	.desktopBackground {
 		display: none;
 	}
 
 	.mobileBackground {
 		display: block;
+	}
+
+	.main {
+		width: 100%;
+		padding: 80px 30px;
+	}
+
+	.top {
+		flex-direction: column;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.heading {
+		text-align: center;
+	}
+
+	.subtitle {
+		text-align: center;
 	}
 }
