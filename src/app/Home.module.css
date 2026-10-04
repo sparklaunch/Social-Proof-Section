@@ -97,15 +97,19 @@
 
 	.main {
 		width: 100%;
-		padding: 80px 30px;
+		padding: 100px 30px;
+		gap: 50px;
 	}
 
 	.top {
 		flex-direction: column;
+		align-items: stretch;
+		gap: 50px;
 	}
 
 	.header {
 		width: 100%;
+		gap: 30px;
 	}
 
 	.heading {
@@ -114,5 +118,11 @@
 
 	.subtitle {
 		text-align: center;
+	}
+
+	.bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
 	}
 }
