@@ -1,5 +1,6 @@
-import { ratings } from "../../db.json";
+import { ratings, testimonials } from "../../db.json";
 import Rating from "../shared/ui/Rating";
+import Review from "../shared/ui/Review";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -22,7 +23,11 @@ export default function Home() {
 					))}
 				</section>
 			</div>
-			<div className={styles.bottom}></div>
+			<div className={styles.bottom}>
+				{testimonials.map((testimonial) => (
+					<Review key={testimonial.id} testimonial={testimonial} />
+				))}
+			</div>
 		</main>
 	);
 }

@@ -1,0 +1,31 @@
+.card {
+	background-color: var(--color-text);
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.avatar {
+	border-radius: 50%;
+}
+
+.reviewer {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.name {
+	color: var(--color-card);
+	font-weight: 500;
+}
+
+.status {
+	color: var(--color-card);
+	font-weight: 300;
+}
