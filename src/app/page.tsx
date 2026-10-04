@@ -27,12 +27,12 @@ export default function Home() {
 				<Image
 					src={topMobileBackground}
 					alt=""
-					className={topMobileBackground}
+					className={styles.topMobileBackground}
 				/>
 				<Image
 					src={bottomMobileBackground}
 					alt=""
-					className={bottomMobileBackground}
+					className={styles.bottomMobileBackground}
 				/>
 			</div>
 			<main className={styles.main}>

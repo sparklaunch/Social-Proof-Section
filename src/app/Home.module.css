@@ -83,8 +83,7 @@
 @media (max-width: 1000px) {
 	.wrapper {
 		height: auto;
-		flex-direction: column;
-		justify-content: flex-start;
+		display: block;
 	}
 
 	.desktopBackground {
@@ -96,6 +95,7 @@
 	}
 
 	.main {
+		position: relative;
 		width: 100%;
 		padding: 100px 30px;
 		gap: 50px;
