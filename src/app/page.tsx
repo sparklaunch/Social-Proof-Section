@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { ratings, testimonials } from "../../db.json";
 import bottomDesktopBackground from "../shared/assets/images/bottom-desktop-background.svg";
+import bottomMobileBackground from "../shared/assets/images/bottom-mobile-background.svg";
 import topDesktopBackground from "../shared/assets/images/top-desktop-background.svg";
+import topMobileBackground from "../shared/assets/images/top-mobile-background.svg";
 import Rating from "../shared/ui/Rating";
 import Review from "../shared/ui/Review";
 import styles from "./Home.module.css";
@@ -19,6 +21,18 @@ export default function Home() {
 					src={bottomDesktopBackground}
 					alt=""
 					className={styles.bottomDesktopBackground}
+				/>
+			</div>
+			<div className={styles.mobileBackground}>
+				<Image
+					src={topMobileBackground}
+					alt=""
+					className={topMobileBackground}
+				/>
+				<Image
+					src={bottomMobileBackground}
+					alt=""
+					className={bottomMobileBackground}
 				/>
 			</div>
 			<main className={styles.main}>

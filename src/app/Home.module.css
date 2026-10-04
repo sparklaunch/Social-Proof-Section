@@ -63,8 +63,28 @@
 	gap: 30px;
 }
 
+.mobileBackground {
+	display: none;
+}
+
+.bottomMobileBackground {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.topMobileBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 @media (max-width: 1000px) {
 	.desktopBackground {
 		display: none;
+	}
+
+	.mobileBackground {
+		display: block;
 	}
 }
