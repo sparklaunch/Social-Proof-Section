@@ -9,8 +9,8 @@ export default function Rating({ rate }: { rate: Rate }) {
 		<div
 			className={styles.card}
 			style={{
-				top: +id * 10,
-				left: +id * 50
+				top: (+id - 3) * 10,
+				left: (+id - 3) * 50
 			}}
 		>
 			<div className={styles.stars}>

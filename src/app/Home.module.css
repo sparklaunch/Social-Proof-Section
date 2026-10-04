@@ -8,12 +8,14 @@
 .top {
 	display: flex;
 	align-items: flex-end;
+	justify-content: space-between;
 }
 
 .header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	width: 40%;
 }
 
 .heading {
