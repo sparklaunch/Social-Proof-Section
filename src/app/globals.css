@@ -1,0 +1,11 @@
+:root {
+	--color-background: rgb(250, 247, 250);
+	--color-text: rgb(72, 31, 73);
+	--color-card: rgb(246, 240, 246);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
